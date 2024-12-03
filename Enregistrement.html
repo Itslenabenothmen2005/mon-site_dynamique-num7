@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>enregistrement</title>
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="controle.js"></script>
+</head>
+<body>
+    <form method="post" action="enregistrement.php" onsubmit="return verif1()">
+        <fieldset>
+<label><h3>station</h3>
+    <select id="st" name="st">
+    <option >choisir un station</option>
+    <option value="TROT">trozza</option>
+    <option value="ZAGN">zaghouan</option>
+    <option value="HANT">EL HANIA</option>
+    <option value="SDBC">SIDI BOUSAID</option>
+</select> <h3>Nom Région</h3><input type="text" id="nr" name="nr"></label></br>
+<label> <h3>Date Séisme:</h3><input type="date" id="ds" name="ds"></label><h3>Heure Séisme</h3
+    ><input type="time" id="hs" name="hs"></br>
+    <label><h3>Magnétude</h3><input type="text" id="m" name="m"></label></br>
+    <label><h3>Latitude</h3><input type="text" name="la" id="la"></label></br>
+    <label><h3>Longitude</h3><input type="text" name="lo" id="lo"></label></br>
+    <input type="submit" value="enregistrer"><input type="reset" value="annuler"></br>
+        </fieldset>
+        
+</form>
+</body>
+</html>

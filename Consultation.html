@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>enregistrement</title>
+    <link rel="stylesheet" href="mesStyles.css">
+    <script src="controle.js"></script>
+</head>
+<body>
+    <form method="post" action="Consultation.php" onsubmit=" return verif2()">
+        <fieldset>
+            <h1>Consultation d’une activité sismique</h1>
+            <label>Station
+                <select name="st" id="st">
+                    <option value="" selected>choisir une station</option>
+                    <option value="TROT">trozza</option>
+                    <option value="ZAGN">zaghouan</option>
+                    <option value="HANT">EL HANIA</option>
+                    <option value="SDBC">SIDI BOUSAID</option>
+                </select>
+            </label>
+            </br>
+            <label>Année:
+                <input type="radio" id="an22" name="annee" value="2022">2022
+                <input type="radio" id="an23" name="annee" value="2023">2023
+                <input type="radio" id="an24" name="annee" value="2024">2024
+            </label>
+        </fieldset>
+        <input type="submit" value="afficher">
+        <input type="reset" value="annuler">
+    </form>
+</body>
+</html>
